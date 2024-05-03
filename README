@@ -1,3 +1,8 @@
+The repository includes the codes for course page development done as part of CSCB20 assignments. 
+It mainly uses Flask, SQLite, HTML/CSS, and Jinja template. 
+
+Requirements: 
+
 1. Python3
 
 Python3 is used to install packages and work with SQLite database.
