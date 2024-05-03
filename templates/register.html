@@ -1,0 +1,22 @@
+{% extends "template.html"%}
+{% block content %}
+    <p><strong>Please register to continue.</strong></p>
+    <form action="/register" method="post">
+        <label for="role" style="color: Black;">Role</label>
+        <select id="role" name="role" required>
+            <option value="instructor">Instructor</option>
+            <option value="student">Student</option>
+        </select>
+
+        <label for="username" style="color: Black;" autocapitalize="False" autocomplete="False">Username</label>
+        <input type="text" id="username" name="username" placeholder="USERNAME" required></textarea>
+
+        <label for="email" style="color: Black;">Email Adress</label>
+        <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS" required></textarea>
+
+        <label for="password" style="color: Black;">Password</label>
+        <input type="text" id="password" name="password" placeholder="PASSWORD" required></textarea>
+
+        <button type="submit">Submit</button>
+</form>
+{% endblock %}

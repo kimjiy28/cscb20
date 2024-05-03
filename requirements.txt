@@ -1,0 +1,15 @@
+1. Python3
+
+Python3 is used to install packages and work with SQLite database.
+
+2. Create a virtual environment
+
+python3 -m venv .venv
+. .venv/bin/activate
+
+3. Within the virtual environment, install the following packages using "pip install" command:
+
+- Flask (render_template, request,flash, redirect, url_for, session)
+- SQLAlchemy
+- datetime, timedelta
+- Bcrypt

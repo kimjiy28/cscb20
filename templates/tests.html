@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block content %}
+    <center>
+        <h2>Tests</h2>
+    </center>
+        <h3>Midterm</h3>
+            <hr>
+            <p>Midterm will be on <b>February 26th from 9 to 11 am in SW319</b>. This midterm exam, with worth of <b>25%</b> mark, will likely evaluate your comprehension of <b>Relational Algebra and SQL queries</b>. See this documentation for <a href="{{ url_for('static', filename='file.pdf') }}">midterm exam practice</a>.</p>
+        <h3>Final Exam</h3>
+            <hr>
+            <p>Final exam will be on <b>April 23rd from 9am to 12pm</b>. In this final exam, which worth of <b>40%</b> mark, your need to score <b>at least 35%</b> to pass the course. See this documentation for <a href="{{ url_for('static', filename='file.pdf') }}">final exam practice</a>.</p></p>
+{% endblock %}

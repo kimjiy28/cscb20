@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+{% block content %}
+    <h2 style="text-align: center">Hello instructor {{ user }}! Please update the grades for your students.</h2>
+    <h2 style="text-align: center">If you would like to view your grade, please visit
+        <a href="{{ url_for('grades_all') }}">here</a>
+    </h2>
+        <form action="/grades_instructors" method="post"
+        <label for="username" style="color: Black;">Select a student:</label>
+        <select id="username" name="username" required>
+            <option disabled selected value="">Students</option>
+            {% for person in students %}
+                <option value="{{ person }}">{{ person }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="assessment" style="color: Black;">Type of Assessment</label>
+        <select id="assessment" name="assessment" required>
+            <option disabled selected value="">Assessments/ Assignments</option>
+                <option value="A1">Assignment1</option>
+                <option value="A2">Assignment2</option>
+                <option value="A3">Assignment3</option>
+                <option value="midterm">Midterm</option>
+                <option value="final">Final</option>
+        </select>
+
+        <label for="grade" style="color: Black;">Grade</label>
+        <input type="number" id="grade" name="grade"></textarea>
+
+        <button type="update">Update</button>
+        </form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "template.html"%}
+{% block content %}
+    {% with messages = get_flashed_messages(with_categories = True) %}
+        {% if messages %}
+            <ul class = flashes>
+            {% for category, message in messages %}
+                    <h3 style="text-align: center">
+                    <em>{{ category }}</em> - {{ message }}
+                    </h3>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <p><strong>Please review the guidelines on Quercus before submitting the remark request.</strong></p>
+    <form action="/remarkrequest" method="post">
+        <label for="assessment" style="color: Black;">Requesting Assessment/Assignments</label>
+        <select id="assessment" name="assessment" required>
+            <option disabled selected value="">Options</option>
+            <option value="A1">Assignment 1</option>
+            <option value="A2">Assignment 2</option>
+            <option value="A3">Assignment 3</option>
+            <option value="midterm">Midterm</option>
+        </select>
+
+        <label for="explanation" style="color: Black;">Explanation/ Reasoning</label>
+        <input type="text" id="explanation" name="explanation" placeholder="Please provide a reasoning for the request."required></textarea>
+        <button type="submit">Submit</button>
+</form>
+{% endblock %}

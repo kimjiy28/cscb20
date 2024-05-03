@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+{% block content %}
+    <h2>Overview</h2>
+        <hr>
+        <p>Here are the assignment topics, weights, and due dates. You can work in group of maximum 3 for each assignments. All assignments will be submitted on MarkUs. </p>
+
+    <h2>Assignments</h2>
+        <hr>
+        <h4><i>Assignment 1</i></h4>
+            <p>This assignment will test you on your understanding and application of <b>RA and SQL</b>. Assignment 1 worth <b>8%</b> marks and due on <b>February 14, 11:59 pm</b>. Check assignment details <a href="{{ url_for('static', filename='file.pdf') }}" style="color: #ffd230">here</a>.</p>
+        <h4><i>Assignment 2</i></h4>
+            <p>This assignment will test you on your understanding and application of <b>HTML, CSS, and Flask</b>. Assignment 2 worth <b>10%</b> marks and due on <b>March 15, 11:59 pm</b>. Check assignment details <a href="{{ url_for('static', filename='file.pdf') }}" style="color: #ffd230">here</a>.</p>
+        <h4><i>Assignment 3</i></h4>
+            <p>This assignment will likely to evaluate your comprehension of <b>Web Development and Database</b>. Assignment 3 worth <b>15%</b> marks and tentatively due on <b>March 31, 11:59 pm</b>. Check assignment details <a href="{{ url_for('static', filename='file.pdf') }}" style="color: #ffd230">here</a>.</p>
+{% endblock %}

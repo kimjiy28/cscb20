@@ -1,0 +1,180 @@
+.leftnavigation a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.leftnavigation a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.leftnavigation a:hover {
+    color: #3bab5a;
+    background-color: transparent;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    color: #ffd230;
+    background-color: transparent;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #365B6D;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    position: fixed;
+    width:100%;
+    top: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    background-color: #365B6D;
+}
+
+.container{
+    display: grid;
+    margin-top: 100px;
+}
+
+.navigator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #423E3A;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 100%
+}
+
+.navgiator p{
+    color: white;
+    padding: 30%;
+    text-decoration: none;
+    font-size: large;
+}
+
+.content{
+    background-color: #253439;
+    padding: 5%;
+    color: white;
+    display: grid;
+    width: 90%;
+}
+
+
+.footer{
+    display: grid;
+    color: white;
+}
+
+.instructor{
+    grid-column: 1/2;
+    padding: 2%;
+}
+
+.department{
+    grid-column: 2/3;
+    text-align: center;
+    padding: 2%;
+}
+
+.credit {
+    grid-column: 3/4;
+    text-align: right;
+    padding: 2%;
+}
+
+.inner-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header {
+    background-color: #ccc; /* Background color for header */
+}
+
+.row:nth-child(even) {
+    background-color: #423E3A; /* Background color for even rows */
+}
+
+.row:hover {
+    background-color: #3bab5a;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+button{
+    width: 100%;
+    background-color: #423E3A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    width: 100%;
+    background-color: #3bab5a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }

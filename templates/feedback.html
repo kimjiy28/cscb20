@@ -1,0 +1,50 @@
+{% extends "template.html" %}
+{% block content %}
+    {% if user not in instructors %}
+    <p><strong>Please provide us with your feedback!</strong></p>
+        <form action="/feedback" method="post"
+            <label for="instructor" style="color: Black;">Choose an instructor:</label>
+            <select id="instructor" name="instructor" required>
+                <option disabled selected value="">Instructor</option>
+                {% for person in instructors %}
+                    <option value="{{ person }}">{{ person }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="Q1" style="color: Black;">What do you like about instructor's teaching?</label>
+            <input type="text" id="Q1" name="Q1"></textarea>
+
+            <label for="Q2" style="color: Black;">
+                What do you recommend the instructor to do to improve their teaching?
+            </label>
+            <input type="text" id="Q2" name="Q2"></textarea>
+
+            <label for="Q3" style="color: Black;">
+                What do you like about the labs?
+            </label>
+            <input type="text" id="Q3" name="Q3"></textarea>
+
+            <label for="Q4" style="color: Black;">
+                What do you recommend the lab instructors to do to improve their lab teaching?
+            </label>
+            <input type="text" id="Q4" name="Q4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    {% else %}
+        <div class="row" style="text-align: center">
+            <div class="column"> Lecture - Strengths </div>
+            <div class="column"> Lecture - Improvements </div>
+            <div class="column"> Lab - Strengths </div>
+            <div class="column"> Lecture - Improvements </div>
+        </div>
+        {% for each in feedback %}
+        <div class="row" style="text-align: center">
+            <div class="column"> {{ each.Q1 }} </div>
+            <div class="column"> {{ each.Q2 }} </div>
+            <div class="column"> {{ each.Q3 }} </div>
+            <div class="column"> {{ each.Q4 }} </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+ {% endblock %}

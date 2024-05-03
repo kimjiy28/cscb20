@@ -1,0 +1,65 @@
+{% extends "template.html" %}
+{% block content%}
+    <center>
+        <h2>Labs</h2>
+    </center>
+        <p>There are weekly labs conducted in person. Students can get worth of <b>2%</b> mark for attending more than or equal to <b>7 labs</b>. The table below provides the handouts and solutions in each tutorial.</p>
+
+                <div class="inner-container" style="text-align: center">
+                    <div class="row">
+                        <div class="column"><b>Weeks</b></div>
+                        <div class="column"><b>Handouts</b></div>
+                        <div class="column"><b>Solutions</b></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 2</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 3</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 4</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 5</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 6</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 7</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 8</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 9</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 10</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 11</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Handout</a></div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Solution</a></div>
+                    </div>
+                </div>
+{% endblock %}

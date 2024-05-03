@@ -1,0 +1,19 @@
+{% extends "template.html"%}
+{% block content %}
+    <h2 style="text-align: center">Hello, instructor {{ user }}!</h2>
+    <h2 style="text-align: center">Please review the following remark requests.</h2>
+    <div class="inner-content" style="text-align: center">
+    <div class="row">
+        <div class="column"><b> Student </b></div>
+        <div class="column"><b> Assessment Type </b></div>
+        <div class="column"><b> Reasoning </b></div>
+    </div>
+    {% for each in requests %}
+        <div class="row">
+            <div class="column">{{ each.username }}</div>
+            <div class="column">{{ each.assessment }}</div>
+            <div class="column">{{ each.explanation }}</div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

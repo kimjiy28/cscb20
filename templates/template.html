@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+        <title>
+            {% if title %} {{ title }}
+            {% else %} CSCB20
+            {% endif %}
+        </title>
+    </head>
+    <body>
+        <div class="heading">
+            <h1> CSCB20: Introduction to Databases and Web Applications</h1>
+            <p>Winter 2024</p>
+        </div>
+
+        <div class="container">
+            <div class="navigator">
+                    <p>
+                        <a href="{{ url_for('home') }}">Home</a>
+                        |
+                        <a href="{{ url_for('lectures') }}">Lectures</a>
+                        |
+                        <a href="{{ url_for('labs') }}">Labs</a>
+                        |
+                        <a href="{{ url_for('assignments') }}">Assignments</a>
+                        |
+                        <a href="{{ url_for('tests') }}">Tests</a>
+                        |
+                        <a href="{{ url_for('grades') }}">Grades</a>
+                        |
+                        <a href="{{ url_for('remarkrequest') }}">Remark Request</a>
+                        |
+                        <a href="{{ url_for('courseteam') }}">Course Team</a>
+                        |
+                        <a href="{{ url_for('feedback') }}">Feedback</a>
+                    </p>
+                    <p>
+                        <a href="{{ url_for('register') }}">Register</a>
+                        |
+                        <a href="{{ url_for('login') }}">Log In</a>
+                        |
+                        <a href="{{ url_for('logout') }}">Log Out</a>
+                    </p>
+            </div>
+
+            <div class="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="instructor">
+            <p><strong>Course Coordinator</strong>: Dr. Purva R. Gwade</p>
+            <p><strong>Email</strong>: purva.gawde@utoronto.ca</p>
+            </div>
+
+            <div class="department">
+                <p><a href="https://www.utsc.utoronto.ca/cms/computer-science-overview">Department of Computer Science</a></p>
+            </div>
+
+            <div class="credit">
+                <p>CSCB20 Assignment 3</p>
+                <p>Designed by: <strong>Rahma Jannati, Jiyeon Kim</strong></strong></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+{% extends "template.html" %}
+{% block content %}
+    <center>
+        <h2>Lectures</h2>
+    </center>
+        <p>Weekly lectures is conducted every <b>Monday at 9 to 11am in SW 319</b>. The table below provides the topics and lecture notes for each weeks. The schedule given below is tentative and subject to change.</p>
+                <div class="inner-content" style="text-align: center">
+                    <div class="row">
+                        <div class="column"><b>Weeks</b></div>
+                        <div class="column"><b>Topics</b></div>
+                        <div class="column"><b>Lecture Notes</b></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 0</div>
+                        <div class="column">Introduction - Databases, Relational Model</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 0</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 1</div>
+                        <div class="column">Relational Algebra</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 1</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 2</div>
+                        <div class="column">Relational Algebra and SQL</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 2</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 3</div>
+                        <div class="column">SQL Queries</div>
+                        <div class="column"><a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 3</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 4</div>
+                        <div class="column">SQL Subqueries and Introduction to Web Development</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 4</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 5</div>
+                        <div class="column">Introduction to Flask, HTML, and CSS</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 5</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 6</div>
+                        <div class="column">HTML Forms, CSS Box Model, Flexbox, Grid</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 6</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 7</div>
+                        <div class="column">Media Queries and Introduction to Javascript</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 7</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 8</div>
+                        <div class="column">Flask and SQL</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 8</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 9</div>
+                        <div class="column">Flask, Sessions and Authentication</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 9</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 10</div>
+                        <div class="column">Flask and SQL, examples</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 10</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">Week 11</div>
+                        <div class="column">Wrap-up</div>
+                        <div class="column">
+                            <a href="{{ url_for('static', filename='file.pdf') }}">Lecture Notes 11</a>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

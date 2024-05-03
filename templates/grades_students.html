@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block content %}
+    <h2 style="text-align: center">Hello {{ user }}! Please view your grades so far. </h2>
+        <div class="inner-content" style="text-align: center">
+            <div class="row">
+                <div class="column"><b>Assessment Type</b></div>
+                <div class="column"><b>Grade (Percent)</b></div>
+            </div>
+            {% for each in grades %}
+                <div class="row">
+                    <div class="column"><b>{{ each.assessment }}</b></div>
+                    <div class="column"><b>{{ each.Grade }}</b></div>
+                </div>
+            {% endfor %}
+        </div>
+{% endblock %}
